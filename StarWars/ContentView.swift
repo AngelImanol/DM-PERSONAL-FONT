@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let saludo: String = String(localized: "hello")
     var body: some View {
         ZStack {
             // Fondo negro
@@ -8,8 +9,8 @@ struct ContentView: View {
 
             VStack {
                 // Título del Episodio
-                Text("EPISODIO HHH")
-                    .font(.custom("Starjedi", size: 28))
+                Text("EPISODIO \(saludo)")
+                    .font(.custom( "Starjedi", size: 28))
                     .foregroundStyle(.yellow)
                     .padding(.bottom, 5)
                     .italic() // Aplica cursiva para un efecto más auténtico
